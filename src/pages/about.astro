@@ -1,0 +1,48 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`About — ${SITE_TITLE}`} description="About Jon Spraggins and this site." />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<article class="prose">
+				<h1>About</h1>
+
+				<p>
+					Hey, I'm Jon. I'm a tinkerer — the kind of person who sees a broken piece of hardware at a garage sale and immediately starts thinking about what could live inside it.
+				</p>
+
+				<p>
+					This site is a place for me to write up my experiments, projects, and occasional failures. If something took me a weekend of troubleshooting to figure out, it probably deserves a write-up so the next person doesn't have to go through the same.
+				</p>
+
+				<p>
+					My interests tend to cluster around homelabs, privacy, physical computing, and the security community. I've been to DEF CON more times than I probably should have, and I have an RFID implant to prove it.
+				</p>
+
+				<p>
+					The "Idiot" in the title is self-deprecating on purpose. I'm not a professional. I'm someone who tries things, breaks things, and occasionally gets them working.
+				</p>
+
+				<h2>The Setup</h2>
+				<p>
+					Currently running a three-node Proxmox cluster at home with more containers than I'd like to admit. You can find me on <a href="https://github.com/jonspraggins" target="_blank">GitHub</a>.
+				</p>
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.prose h1 { margin-bottom: 0.75em; }
+	.prose h2 { margin-top: 2em; font-size: 1.4em; }
+</style>
