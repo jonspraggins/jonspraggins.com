@@ -17,7 +17,13 @@ Back in late summer of 2018, a flood drove me out of my home for a few days. My 
 
 It sat as a paperweight for a few months while I figured out what to do with it. One weekend, I gutted the internals, assessed the space, and an idea clicked.
 
+![The Army Radio chassis](/images/IMG_20200426_142422-scaled-e1587950166510-825x510.jpg)
+
 It had a working speaker, switches, and dials. After removing the old components, there was plenty of room for whatever I wanted to put in there.
+
+![Interior view](/images/IMG_20200426_142514-scaled-e1587929143881-1024x768.jpg)
+
+![Internals layout](/images/IMG_20200426_142526-1024x768.jpg)
 
 ## Parts
 
@@ -34,6 +40,8 @@ It had a working speaker, switches, and dials. After removing the old components
 I originally intended to turn this into a Google Assistant device using the Voice Hat. Unfortunately, the [AIY projects codebase](https://github.com/google/aiyprojects-raspbian) has since been deprecated and the "Hey Google" / "OK Google" hotwords no longer work with it.
 
 So right now, the radio uses [Tizonia](https://tizonia.org/) to stream music. Volume is handled by the original potentiometer on the chassis — a satisfying analog touch.
+
+![Completed build](/images/IMG_20200426_185056-1024x768.jpg)
 
 Power is wired through a toggle switch that powers the indicator light, the USB wall charger, and by extension the Pi. I know that's not ideal since there's no graceful shutdown path. I've been looking into capacitor-based hats that can handle a clean shutdown on power loss.
 

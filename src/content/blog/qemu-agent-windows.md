@@ -19,11 +19,21 @@ In plain terms: it lets Proxmox communicate more deeply with a running VM. Notab
 
 1. With the VM **shut down**, go into the VM's **Options** tab in Proxmox.
 
+![QEMU Guest Agent option](/images/qemu.png)
+
 2. Enable the **QEMU Guest Agent** checkbox and click **OK**.
 
 3. Start the VM.
 
 4. Inside the VM, manually install the **vioserial drivers** from the VirtIO ISO image.
+
+![VirtIO ISO in device manager](/images/virtioiso.png)
+
+![VirtIO storage folder](/images/viostorfolder.png)
+
+![Storage driver error](/images/stordrivererror.png)
+
+![Device Manager](/images/devman.png)
 
 5. From the same VirtIO image, install the guest agent: `guest-agent/qemu-ga-x86.msi`
    > Note: The x86 version has proven more reliable than the x64 in my experience.

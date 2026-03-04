@@ -23,6 +23,8 @@ At the time, the [r/ethermining](https://www.reddit.com/r/ethermining) community
 
 ## Building the Rig
 
+![The mining rig](/images/miner-825x510.jpg)
+
 I started with a single GTX 1080. Over the course of a year, I picked up 5 additional GTX 1070s by watching Craigslist, Letgo, and [r/minerswap](https://www.reddit.com/r/minerswap) — never paid more than $280 per card. Buying new cards kills your ROI timeline. Be patient.
 
 More cards meant more supporting hardware. In addition to my existing CPU, memory, and 750W PSU, I added:
@@ -35,7 +37,9 @@ More cards meant more supporting hardware. In addition to my existing CPU, memor
 
 ## The OS
 
-I started on Windows with [Ethminer](https://github.com/ethereum-mining/ethminer/releases), but Windows loves to interrupt with updates at the worst possible times. I switched to [HiveOS](https://hiveos.farm/) and never looked back. It's a mining-focused Linux distro with a clean web dashboard showing all hardware stats at a glance.
+I started on Windows with [Ethminer](https://github.com/ethereum-mining/ethminer/releases), but Windows loves to interrupt with updates at the worst possible times. I switched to [HiveOS](https://hiveos.farm/) and never looked back.
+
+![HiveOS dashboard](/images/hiveos.png) It's a mining-focused Linux distro with a clean web dashboard showing all hardware stats at a glance.
 
 For getting HiveOS set up properly, I recommend [Seth's HiveOS Tutorial](https://www.youtube.com/playlist?list=PLoGp16oCL0A-dP3-A31koTCWxK_iOH9Qa).
 

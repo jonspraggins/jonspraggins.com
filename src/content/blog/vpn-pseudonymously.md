@@ -21,9 +21,13 @@ As of this writing (January 2018), you could get a VPN account from **Private In
 
 1. Pick up a store-branded gift card from the dropdown on PIA's payment page.
 
+![PIA gift card payment page](/images/piacardtrade.png)
+
 2. Register the card using the same link.
 
 3. When asked for your email address, open a new tab and go to [mailinator.com](https://www.mailinator.com/).
+
+![Mailinator inbox](/images/mailinator.png)
 
 4. Create a long email name — I use four random words strung together. Click **Go!**
 

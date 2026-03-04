@@ -43,6 +43,8 @@ A large library of third-party modules is available [here](https://github.com/Mi
 
 ## The Hardware
 
+![The smart mirror](/images/smartmirror-e1556131427717-825x510.jpg)
+
 The real trick to a smart mirror is making the hardware disappear. I carefully removed the plastic bezel from the monitor, leaving just the panel and internals. Black electrical tape around the screen edges prevents light bleed and adds some friction when pressing against the glass.
 
 For mounting the monitor to the mirror: I used **plate hangers**. Odd choice, I know — but they hold the monitor firmly against the glass while keeping everything modular. I can swap the monitor without touching any glue or cutting a new frame.
