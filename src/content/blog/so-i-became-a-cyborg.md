@@ -10,6 +10,7 @@ Well, in the most technical sense of the word.
 I got an NFC chip installed in my left hand. The [Biohacking Village](https://www.defconbiohackingvillage.org/) at [DEF CON 25](https://www.defcon.org/html/defcon-25/dc-25-index.html) was offering implants to the first 45 eligible people — eligible meaning sober and over 18. Ol' Jon got lucky number 45. It feels weird to know I can read and write data to my body.
 
 The implant was the [xNT NFC Tag by Dangerous Things](https://dangerousthings.com/shop/xnti/), installed by a gentleman who goes by the name of [Cooper](https://twitter.com/c00p3r_7).
+![The Chip, in xray](/images/49679607.png)
 
 I haven't found the perfect use for it yet. Currently I've just written a generic text record (which may or may not be shamelessly stolen from *Orphan Black*). I'd like to have it as part of some tech scavenger hunt, but I need to kick a few ideas around.
 
