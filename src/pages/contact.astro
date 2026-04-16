@@ -1,0 +1,148 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Contact — ${SITE_TITLE}`} description="Get in touch with Jon Spraggins." />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<article class="prose">
+				<h1>Contact</h1>
+
+				<p>
+					A few ways to reach me, depending on how much you care about privacy.
+				</p>
+
+				<div class="contact-options">
+
+					<a class="contact-card" href="mailto:contact@jonspraggins.com">
+						<div class="contact-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<rect width="20" height="16" x="2" y="4" rx="2"/>
+								<path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+							</svg>
+						</div>
+						<div class="contact-text">
+							<span class="contact-label">Email</span>
+							<span class="contact-value">contact@jonspraggins.com</span>
+						</div>
+					</a>
+
+					<a class="contact-card" href="https://signal.me/#eu/YOURUSERNAMEHERE" target="_blank" rel="noopener noreferrer">
+						<div class="contact-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/>
+							</svg>
+						</div>
+						<div class="contact-text">
+							<span class="contact-label">Signal</span>
+							<span class="contact-value">Preferred for sensitive topics</span>
+						</div>
+						<span class="contact-badge">private</span>
+					</a>
+
+					<a class="contact-card" href="https://github.com/jonspraggins" target="_blank" rel="noopener noreferrer">
+						<div class="contact-icon">
+							<svg viewBox="0 0 16 16" width="20" height="20" aria-hidden="true">
+								<path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+							</svg>
+						</div>
+						<div class="contact-text">
+							<span class="contact-label">GitHub</span>
+							<span class="contact-value">jonspraggins</span>
+						</div>
+					</a>
+
+				</div>
+
+				<p class="contact-note">
+					I read everything. Response time varies — I'm not always quick, but I do reply.
+				</p>
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.prose h1 { margin-bottom: 0.5em; }
+
+	.contact-options {
+		display: flex;
+		flex-direction: column;
+		gap: 0.75em;
+		margin: 1.75em 0;
+	}
+
+	.contact-card {
+		display: flex;
+		align-items: center;
+		gap: 1em;
+		background: var(--bg-surface);
+		border: 1px solid var(--bg-border);
+		border-radius: 8px;
+		padding: 1em 1.25em;
+		text-decoration: none;
+		color: var(--text);
+		transition: border-color 0.15s, background 0.15s;
+		position: relative;
+	}
+
+	.contact-card:hover {
+		border-color: var(--accent);
+		background: rgba(88, 166, 255, 0.04);
+		text-decoration: none;
+		color: var(--text);
+	}
+
+	.contact-icon {
+		color: var(--accent);
+		flex-shrink: 0;
+		display: flex;
+		align-items: center;
+	}
+
+	.contact-text {
+		display: flex;
+		flex-direction: column;
+		gap: 0.15em;
+	}
+
+	.contact-label {
+		font-weight: 700;
+		font-size: 0.95em;
+		color: var(--text-heading);
+	}
+
+	.contact-value {
+		font-size: 0.85em;
+		color: var(--text-muted);
+		font-family: 'Courier New', monospace;
+	}
+
+	.contact-badge {
+		margin-left: auto;
+		background: rgba(88, 166, 255, 0.08);
+		border: 1px solid rgba(88, 166, 255, 0.2);
+		color: var(--accent);
+		font-size: 0.72em;
+		padding: 0.2em 0.6em;
+		border-radius: 4px;
+		font-family: 'Courier New', monospace;
+		letter-spacing: 0.04em;
+		flex-shrink: 0;
+	}
+
+	.contact-note {
+		color: var(--text-muted);
+		font-size: 0.9em;
+		margin-top: 0.5em;
+	}
+</style>

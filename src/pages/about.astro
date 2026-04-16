@@ -36,6 +36,32 @@ import { SITE_TITLE } from '../consts';
 				<p>
 					Currently running a three-node Proxmox cluster at home with more containers than I'd like to admit. You can find me on <a href="https://github.com/jonspraggins" target="_blank">GitHub</a>.
 				</p>
+
+				<hr class="section-divider" />
+
+				<h2>Work</h2>
+				<p>
+					By day I'm a Principal Engineer focused on secure access infrastructure — building systems used by law enforcement, intelligence agencies, and trust &amp; safety teams. My work sits at the intersection of network security, identity, and operational security.
+				</p>
+
+				<div class="work-meta">
+					<div class="work-item">
+						<span class="work-title">Principal Engineer, Secure Access</span>
+						<span class="work-sep">·</span>
+						<span class="work-company">Babel Street</span>
+					</div>
+					<div class="work-tags">
+						<span class="tag">managed attribution</span>
+						<span class="tag">secure VDI</span>
+						<span class="tag">DoD / IC</span>
+						<span class="tag">TS/SCI</span>
+					</div>
+				</div>
+
+				<p class="work-note">
+					I'm not actively looking, but I'm always open to interesting conversations.
+					If something I've written resonates with work you're doing, <a href="/contact">reach out</a>.
+				</p>
 			</article>
 		</main>
 		<Footer />
@@ -45,4 +71,68 @@ import { SITE_TITLE } from '../consts';
 <style>
 	.prose h1 { margin-bottom: 0.75em; }
 	.prose h2 { margin-top: 2em; font-size: 1.4em; }
+
+	.section-divider {
+		border: none;
+		border-top: 1px solid var(--bg-border);
+		margin: 2.5em 0;
+	}
+
+	.work-meta {
+		background: var(--bg-surface);
+		border: 1px solid var(--bg-border);
+		border-radius: 8px;
+		padding: 1.25em 1.5em;
+		margin: 1.25em 0;
+	}
+
+	.work-item {
+		display: flex;
+		align-items: center;
+		gap: 0.5em;
+		flex-wrap: wrap;
+		margin-bottom: 0.75em;
+	}
+
+	.work-title {
+		font-weight: 700;
+		color: var(--text-heading);
+		font-size: 1em;
+	}
+
+	.work-sep {
+		color: var(--text-muted);
+	}
+
+	.work-company {
+		color: var(--accent);
+		font-size: 1em;
+	}
+
+	.work-tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.4em;
+	}
+
+	.tag {
+		background: rgba(88, 166, 255, 0.08);
+		border: 1px solid rgba(88, 166, 255, 0.2);
+		color: var(--accent);
+		font-size: 0.78em;
+		padding: 0.2em 0.65em;
+		border-radius: 4px;
+		font-family: 'Courier New', monospace;
+		letter-spacing: 0.02em;
+	}
+
+	.work-note {
+		color: var(--text-muted);
+		font-size: 0.95em;
+		margin-top: 1em;
+	}
+
+	.work-note a {
+		color: var(--accent);
+	}
 </style>
