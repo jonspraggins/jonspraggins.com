@@ -15,13 +15,13 @@
   <polyline points="2,26 2,30 6,30" fill="none" stroke="#1f3a4a" stroke-width="1"/>
   <polyline points="30,26 30,30 26,30" fill="none" stroke="#1f3a4a" stroke-width="1"/>
 
-  <!-- Glow layer (wide, soft) -->
+  <!-- Glow layer -->
   <text x="16" y="21" font-family="'Courier New', Courier, monospace" font-weight="bold" font-size="13"
-    text-anchor="middle" fill="#58a6ff" opacity="0.25" filter="url(#glow-wide)">R//</text>
+    text-anchor="middle" fill="#58a6ff" opacity="0.25" filter="url(#glow-wide)">J//</text>
 
   <!-- Sharp text -->
   <text x="16" y="21" font-family="'Courier New', Courier, monospace" font-weight="bold" font-size="13"
-    text-anchor="middle" fill="#58a6ff">R//</text>
+    text-anchor="middle" fill="#58a6ff">J//</text>
 
   <defs>
     <filter id="glow-wide" x="-50%" y="-50%" width="200%" height="200%">
