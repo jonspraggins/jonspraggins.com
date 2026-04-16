@@ -1,6 +1,8 @@
 ---
 title: "The Idiot clumsily migrates VMware VMs into ProxmoxVE"
 description: "A quick and dirty guide on how to migrate VMware VMs to Proxmox Virtual Environment. Tested in the 5.0 Beta."
+outdated: true
+outdatedNote: "Written against Proxmox 5. The migration process, UI, and tooling have changed substantially in Proxmox 6, 7, and 8. The concepts are still valid but the specific steps may not match your current version."
 pubDate: 2017-07-30
 tags: ["proxmox", "virtualization"]
 ---
