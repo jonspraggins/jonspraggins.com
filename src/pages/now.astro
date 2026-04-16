@@ -1,0 +1,82 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+
+const lastUpdated = 'April 2026';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Now — ${SITE_TITLE}`} description="What Jon Spraggins is working on right now." />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<article class="prose">
+				<div class="now-header">
+					<h1>Now</h1>
+					<span class="updated-badge">Updated {lastUpdated}</span>
+				</div>
+
+				<p class="now-intro">
+					What I'm actually working on, as of right now. Inspired by <a href="https://nownownow.com" target="_blank" rel="noopener noreferrer">nownownow.com</a>.
+				</p>
+
+				<h2>Work</h2>
+				<p>
+					Building and maintaining managed attribution infrastructure. Thinking about what it means to make operational security invisible to the people who need it most.
+				</p>
+
+				<h2>Homelab</h2>
+				<p>
+					Running a three-node Proxmox cluster in the workshop. Recently added a local AI inference node (AMD RX 6700 XT, ROCm) — it now handles most of my day-to-day AI workload without touching the cloud. Experimenting with agent-based automation for homelab operations.
+				</p>
+
+				<h2>Writing</h2>
+				<p>
+					Trying to get back to documenting things here. If I spent a weekend on it, it probably deserves a write-up.
+				</p>
+
+				<h2>Reading</h2>
+				<p>
+					Nothing worth recommending right now. Ask me again in a month.
+				</p>
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.prose h1 { margin-bottom: 0.25em; }
+	.prose h2 { margin-top: 2em; font-size: 1.3em; }
+
+	.now-header {
+		display: flex;
+		align-items: baseline;
+		gap: 1em;
+		margin-bottom: 0.5em;
+	}
+
+	.updated-badge {
+		font-size: 0.75em;
+		color: var(--text-muted);
+		font-family: 'Courier New', monospace;
+		border: 1px solid var(--bg-border);
+		padding: 0.2em 0.6em;
+		border-radius: 4px;
+	}
+
+	.now-intro {
+		color: var(--text-muted);
+		font-size: 0.95em;
+		margin-top: 0;
+	}
+
+	.now-intro a {
+		color: var(--accent);
+	}
+</style>

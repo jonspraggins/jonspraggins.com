@@ -4,10 +4,12 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
+import { readingTime } from '../utils/readingTime';
 
-type Props = CollectionEntry<'blog'>['data'];
+type Props = CollectionEntry<'blog'>['data'] & { rawContent?: string };
 
-const { title, description, pubDate, updatedDate, tags } = Astro.props;
+const { title, description, pubDate, updatedDate, tags, rawContent } = Astro.props;
+const readTime = rawContent ? readingTime(rawContent) : null;
 ---
 
 <html lang="en">
@@ -21,6 +23,7 @@ const { title, description, pubDate, updatedDate, tags } = Astro.props;
 				<div class="post-header">
 					<div class="post-meta">
 						<span class="post-date"><FormattedDate date={pubDate} /></span>
+						{readTime && <span class="read-time">{readTime}</span>}
 						{tags && tags.map((tag: string) => (
 							<span class="tag">{tag}</span>
 						))}
@@ -63,6 +66,14 @@ const { title, description, pubDate, updatedDate, tags } = Astro.props;
 	.post-date {
 		font-size: 0.85em;
 		color: var(--text-muted);
+	}
+	.read-time {
+		font-size: 0.8em;
+		color: var(--text-muted);
+		padding: 0.1em 0.5em;
+		border: 1px solid var(--bg-border);
+		border-radius: 4px;
+		font-family: 'Courier New', monospace;
 	}
 	.tag {
 		font-size: 0.72em;
