@@ -3,6 +3,8 @@ title: "The Idiot gets a VPN Account Pseudonymously"
 description: "How to sign up for a VPN service without handing over your credit card or real email address."
 pubDate: 2018-01-16
 tags: ["privacy", "security"]
+outdated: true
+outdatedNote: "Written in 2018. The specific services and methods described here no longer work as written — payment flows, email policies, and site requirements have changed significantly. Treat this as a historical snapshot, not actionable advice."
 ---
 
 Privacy. It's all the rage now. Let's see if we can get a little more of it.
